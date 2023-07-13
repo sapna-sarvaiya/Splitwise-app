@@ -42,7 +42,7 @@ const Group: React.FC = () => {
   return (
     <>
       <div className='container'>
-        <p className='font-size--30 font--bold text--center mb--20'>Splitwise Application</p>
+        <p className='font-size--30 font--bold text--center mb--20'>Split wisely</p>
         <div className='flex justify-content--center'>
           <button onClick={(() => navigate('/expense', { state: { members: groups.members } }))} className='common-btn add-btn' type='submit'>Add Group</button>
         </div>
@@ -54,10 +54,7 @@ const Group: React.FC = () => {
           </h4></div>
         <ul>
           <li>
-            First, sign up for an account!
-          </li>
-          <li>
-            Next, create a group.  Groups are an easy way to split expenses with a particular group of people on an ongoing basis
+            First, create a group.  Groups are an easy way to split expenses with a particular group of people on an ongoing basis
           </li>
           <li>
             you'll be asked to provide contact information for the other members of the group. This allows all of those people to view the group on Splitwise, and to add expenses of their own.
