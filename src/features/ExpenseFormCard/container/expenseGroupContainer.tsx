@@ -57,10 +57,15 @@ const Group: React.FC = () => {
             First, create a group.  Groups are an easy way to split expenses with a particular group of people on an ongoing basis
           </li>
           <li>
-            you'll be asked to provide contact information for the other members of the group. This allows all of those people to view the group on Splitwise, and to add expenses of their own.
+            you'll be asked to provide members of the group. This allows all of those people to view the group on Splitwise, and to add expenses of their own.
           </li>
           <li>
-            Once you've created your group, you and your friends can all start adding expenses! Go to your group, then hit the "Add bill" button. You'll be asked for various details about your expense, like the total cost, who paid, and how much each person should owe. You can include a picture or additional notes, or even change the date (for example, if you're adding an expense from last week). As soon as you hit "Save", Splitwise will update everyone's balances to keep track of how much each person owes.
+            Once you've created your group, you and your friends can all start adding expenses! Go to your group, then hit the "Add expense" button.
+          </li>
+          <li>
+            You'll be asked for various details about your expense, like  who paid, and how much each person should owe As soon as you hit "Add".   </li>
+          <li>
+            Splitwise will update everyone's balances to keep track of how much each person owes.
           </li>
           <li>
             Later, after you've added a bunch of expenses, you'll probably want to settle up with your friends. Just hit the "Settle up" button to pay back your friend.
