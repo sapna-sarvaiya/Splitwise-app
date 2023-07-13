@@ -36,7 +36,7 @@ export const ExpenseListColumns = [
 		className: 'width--8'
 	},
 	{
-		key: 'payer',
+		key: 'person',
 		sortable: false,
 		heading: 'Paid By',
 		className: 'width--7'
