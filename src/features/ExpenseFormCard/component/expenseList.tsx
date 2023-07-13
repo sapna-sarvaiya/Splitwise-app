@@ -59,7 +59,7 @@ const ExpenseList: React.FC<IProps> = (props) => {
                     </CTableCell>
                     <CTableCell>
                       <p className='text--capitalize table-cell-info'>
-                        ${formatValue(expense.amount)}
+                        {formatValue(expense.amount)}
                       </p>
                     </CTableCell>
                     <CTableCell>
