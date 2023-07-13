@@ -24,9 +24,8 @@ const CTablePagination = (props: IProps) => (
 	<>
 		{props.pagination.totalPages > 1 && (
 			<div
-				className={`table-pagination flex align-items--center mt--20 mb--20 ${
-					props.perPageOption ? 'justify-content--between' : 'justify-content--end'
-				} ${props.className}`}
+				className={`table-pagination flex align-items--center mt--20 mb--20 ${props.perPageOption ? 'justify-content--between' : 'justify-content--end'
+					} ${props.className}`}
 			>
 				{!!props.perPageOption && (
 					<Select
@@ -45,9 +44,8 @@ const CTablePagination = (props: IProps) => (
 					forcePage={props.pagination.currentPage - 1}
 					previousLabel='&#10092;'
 					previousClassName={`paginate-btn ${props.pagination.currentPage === 1 ? 'prev-class' : ''}`}
-					nextClassName={`paginate-btn ${
-						props.pagination.currentPage === props.pagination.totalPages ? 'prev-class' : ''
-					}`}
+					nextClassName={`paginate-btn ${props.pagination.currentPage === props.pagination.totalPages ? 'prev-class' : ''
+						}`}
 					nextLabel='&#10093;'
 					breakLabel={'...'}
 					pageCount={props.pagination.totalPages}

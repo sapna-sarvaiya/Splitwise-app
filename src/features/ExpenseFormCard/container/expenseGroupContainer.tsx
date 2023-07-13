@@ -42,7 +42,7 @@ const Group: React.FC = () => {
   return (
     <>
       <div className='container'>
-        <p className='font-size--30 font--bold text--center mb--20'>Split wisely</p>
+        <p className='font-size--30 font--bold text--center mb--20'>Split Wisely</p>
         <div className='flex justify-content--center'>
           <button onClick={(() => navigate('/expense', { state: { members: groups.members } }))} className='common-btn add-btn' type='submit'>Add Group</button>
         </div>
@@ -50,7 +50,7 @@ const Group: React.FC = () => {
 
       <div className="desc-color">
         <div className='flex '> <img src={money} className='money-img' />
-          <h4 className='ml--40'>How do I use Splitwise?
+          <h4 className='ml--40'>How do I use Split Wisely?
           </h4></div>
         <ul>
           <li>
