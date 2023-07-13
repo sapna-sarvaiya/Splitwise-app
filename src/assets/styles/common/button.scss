@@ -1,0 +1,95 @@
+//btn
+.btn {
+	height: 50px;
+	width: 200px;
+	border-radius: 100px;
+	@include padding(5px 18px);
+	transition: all 0.2s linear;
+	color: $white;
+
+	&--border {
+		background-color: transparent;
+		border: 1px solid;
+
+		&-primary {
+			border: 1px solid $primary;
+		}
+
+		&-white {
+			border: 1px solid #ffffff80;
+		}
+	}
+
+	&--bg{
+		background-color: #000040;
+	}
+
+	&--color {
+		color: $black;
+	}
+
+	&--small {
+		height: 35px;
+		border-radius: 10px;
+		// @include padding(5px 10px)
+	}
+
+	&--width {
+		width: auto;
+
+		&-full {
+			width: 100% !important;
+		}
+
+		&-180 {
+			width: 180px;
+		}
+
+		&-max {
+			width: max-content;
+		}
+
+		&-120 {
+			width: 120px;
+		}
+
+		&-250 {
+			width: 250px;
+		}
+	}
+
+	&--height {
+		&-55 {
+			height: 55px;
+		}
+
+		&-52 {
+			height: 52px;
+		}
+
+		&-42 {
+			height: 42px;
+		}
+
+		&-35 {
+			height: 35px;
+		}
+
+		&-18 {
+			height: 18px;
+		}
+	}
+
+	&.back-btn {
+		@include padding(5px 15px);
+		width: 90px;
+		height: 40px;
+		border: 1px solid #ffffff20;
+		background-color: #000040;
+		
+		.icon {
+			width: 15px;
+			height: 15px;
+		}
+	}
+}

@@ -1,0 +1,194 @@
+.loader {
+	width: 60px;
+}
+
+.loader:before {
+	content: '';
+	display: block;
+	padding-top: 100%;
+}
+
+.circular {
+	animation: rotate 2s linear infinite;
+	-webkit-animation: rotate 2s linear infinite;
+	height: auto;
+	transform-origin: center center;
+	-webkit-transform-origin: center center;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.path {
+	stroke-dasharray: 1, 200;
+	stroke-dashoffset: 0;
+	animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+	-webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+	stroke-linecap: round;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes dash {
+	0% {
+		stroke-dasharray: 1, 200;
+		stroke-dashoffset: 0;
+	}
+
+	50% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -35px;
+	}
+
+	100% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -124px;
+	}
+}
+
+@keyframes color {
+	100%,
+	0% {
+		stroke: #d62d20;
+	}
+
+	40% {
+		stroke: #0057e7;
+	}
+
+	66% {
+		stroke: #008744;
+	}
+
+	80%,
+	90% {
+		stroke: #ffa700;
+	}
+}
+
+@-webkit-keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes dash {
+	0% {
+		stroke-dasharray: 1, 200;
+		stroke-dashoffset: 0;
+	}
+
+	50% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -35px;
+	}
+
+	100% {
+		stroke-dasharray: 89, 200;
+		stroke-dashoffset: -124px;
+	}
+}
+
+@-webkit-keyframes color {
+	100%,
+	0% {
+		stroke: #d62d20;
+	}
+
+	40% {
+		stroke: #0057e7;
+	}
+
+	66% {
+		stroke: #008744;
+	}
+
+	80%,
+	90% {
+		stroke: #ffa700;
+	}
+}
+
+.form-loader {
+	position: relative;
+
+	.form-overlay-loader {
+		z-index: 111;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: rgba($color: #ffffff, $alpha: 0.75);
+	}
+}
+
+.btn-spinner {
+	.loader {
+		height: 40px;
+		svg {
+			height: 100%;
+		}
+	}
+}
+
+.football-loader {
+	margin-top: 30px;
+	svg {
+		width: 100px;
+		height: 100px;
+		display: block;
+		margin: 0 auto;
+		path {
+			animation-duration: 1s;
+			animation-name: pulse;
+			animation-iteration-count: infinite;
+			fill: #ffffff;
+
+			&.path-7 {
+				animation-delay: -1s;
+			}
+			&.path-6 {
+				animation-delay: -0.875s;
+			}
+			&.path-5 {
+				animation-delay: -0.75s;
+			}
+			&.path-4 {
+				animation-delay: -0.625s;
+			}
+			&.path-3 {
+				animation-delay: -0.5s;
+			}
+			&.path-2 {
+				animation-delay: -0.375s;
+			}
+			&.path-1 {
+				animation-delay: -0.25s;
+			}
+			&.path-0 {
+				animation-delay: -0.125s;
+			}
+		}
+	}
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 0.1;
+	}
+	30% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 0.1;
+	}
+}
