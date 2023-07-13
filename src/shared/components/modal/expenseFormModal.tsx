@@ -88,7 +88,7 @@ const ExpenseForm: React.FC<IProps> = (props) => {
 					}
 					}
 				>
-					{({ setFieldValue, values, errors, validateForm, resetForm }) => (
+					{({ setFieldValue, values }) => (
 						<Form>
 							<div className='form_section flex flex--column align-items--center mt--15 mb--20'>
 
