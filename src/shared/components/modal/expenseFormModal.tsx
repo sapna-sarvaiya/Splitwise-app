@@ -59,7 +59,7 @@ const ExpenseForm: React.FC<IProps> = (props) => {
 				id: uuidv4(),
 				description: value.description,
 				amount: parseFloat(value.amount),
-				payer: value.payer,
+				person: value.person,
 				participants: data,
 				createdDate: new Date(),
 				isSettled: false,

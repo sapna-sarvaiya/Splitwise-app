@@ -46,7 +46,7 @@ const ExpenseList: React.FC<IProps> = (props) => {
                       </p>
                     </CTableCell>
                     <CTableCell>
-                      <p className='table-cell-info'>{formatValue(expense.payer)}</p>
+                      <p className='table-cell-info'>{formatValue(expense.person)}</p>
                     </CTableCell>
                     <CTableCell>
                       <div>

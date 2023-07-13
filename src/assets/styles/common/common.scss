@@ -1425,5 +1425,30 @@
 }
 .ant-modal .ant-modal-header{
 	background: transparent !important;
-
+}
+.desc-color{
+	// color: white;
+	max-width: 800px;
+	padding: 10px 20px;
+    background-color: #97f0fb;
+    border-radius: 35px;
+	padding-bottom: 55px;
+    height: 560px;
+	
+	ul {
+		li {
+			margin-bottom: 10px;
+			list-style-type: square;
+			margin-left: 39px;
+			font-size: 15px;
+			font-weight: 700;
+			line-height: 30px;
+		}
+	}
+		
+	
+}
+.money-img{
+	height: 100px;
+	width: 100px;
 }
