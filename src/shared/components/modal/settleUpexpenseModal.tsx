@@ -81,17 +81,17 @@ const SettleUpExpense: React.FC<IProps> = (props) => {
 								Total amount : <span className='font--semi-bold'>{expenseDetails.amount} rupees</span>
 							</p>
 							<p>
-								Paid by : <span className='font--semi-bold'>{expenseDetails.person}</span>
+								Paid by : <span className='font--semi-bold'>{expenseDetails.payer}</span>
 							</p>
 						</div>
 						<div>
 							{expenseDetails.participants.map((participant: IParticipants, index: number) => (
 								<div className='mb--10' key={index}>
 									<p className='font--semi-bold'>{participant.name}</p>
-									{participant.name === expenseDetails.person ? <p className='text--green font-size--sm'>Received {participant.splitAmount} rupees</p> : <p className='text--red font-size--sm cursor--pointer' onClick={() => setIsConfirmName(participant.name)}>Owes {participant.splitAmount} rupees</p>}
+									{participant.name === expenseDetails.payer ? <p className='text--green font-size--sm'>Received {participant.splitAmount} rupees</p> : <p className='text--red font-size--sm cursor--pointer' onClick={() => setIsConfirmName(participant.name)}>Owes {participant.splitAmount} rupees</p>}
 									{confirmName === participant.name && participant.splitAmount !== 0 && (
 										<div className='flex align-items--center'>
-											<p className='text--grey-300 mr--10'>Pay to <span className='font--bold'>{expenseDetails.person}</span> <span className='text--red'>{expenseDetails.splitAmount} rupees</span></p>
+											<p className='text--grey-300 mr--10'>Pay to <span className='font--bold'>{expenseDetails.payer}</span> <span className='text--red'>{expenseDetails.splitAmount} rupees</span></p>
 											<button className='btn btn--width btn--bg btn--small' onClick={() => { setIsConfirmName(''); handleSettleParticipant(participant.name) }}>Ok</button>
 										</div>
 									)}

@@ -63,9 +63,9 @@ const Group: React.FC = () => {
             Once you've created your group, you and your friends can all start adding expenses! Go to your group, then hit the "Add expense" button.
           </li>
           <li>
-            You'll be asked for various details about your expense, like  who paid, and how much each person should owe As soon as you hit "Add".   </li>
+            You'll be asked for various details about your expense, like  who paid, and how much each payer should owe As soon as you hit "Add".   </li>
           <li>
-            Splitwise will update everyone's balances to keep track of how much each person owes.
+            Splitwise will update everyone's balances to keep track of how much each payer owes.
           </li>
           <li>
             Later, after you've added a bunch of expenses, you'll probably want to settle up with your friends. Just hit the "Settle up" button to pay back your friend.

@@ -21,7 +21,7 @@ interface IProps {
 
 const initialValue = {
 	description: '',
-	person: '',
+	payer: '',
 	participants: [],
 	amount: null
 }
@@ -59,7 +59,7 @@ const ExpenseForm: React.FC<IProps> = (props) => {
 				id: uuidv4(),
 				description: value.description,
 				amount: parseFloat(value.amount),
-				person: value.person,
+				payer: value.payer,
 				participants: data,
 				createdDate: new Date(),
 				isSettled: false,
@@ -126,13 +126,13 @@ const ExpenseForm: React.FC<IProps> = (props) => {
 									isErrorShow
 								/>
 								<ReactSelect
-									name='person'
+									name='payer'
 									options={filters}
 									placeholder='Select'
 									title='select who paid'
-									selectedValue={selectedOption(filters, values.person)}
+									selectedValue={selectedOption(filters, values.payer)}
 									onChange={(options: any) => {
-										setFieldValue('person', options.value);
+										setFieldValue('payer', options.value);
 									}}
 									className='form_field team-form_field mt--30'
 									isErrorShow

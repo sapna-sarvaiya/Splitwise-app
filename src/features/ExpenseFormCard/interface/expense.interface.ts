@@ -2,7 +2,7 @@ export interface IExpense {
 	id: string;
 	description: string;
 	amount: number;
-	person: string;
+	payer: string;
 	participants: IParticipants[];
 	splitAmount: number;
 	createdDate: any;
@@ -36,7 +36,7 @@ export const ExpenseListColumns = [
 		className: 'width--8'
 	},
 	{
-		key: 'person',
+		key: 'payer',
 		sortable: false,
 		heading: 'Paid By',
 		className: 'width--7'
